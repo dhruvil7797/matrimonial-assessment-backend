@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
 
 // Just add whatever API you might need
 // For example if you need a login API as it as below
+// And return the response in json format whatever you want
 
 app.post("/login", (req, res) => {
     const userName = req.body.username;
@@ -34,6 +35,7 @@ app.post("/login", (req, res) => {
         return res.send({success: false, message: "Login Failed"})
     }
 })
+
 
 
 
